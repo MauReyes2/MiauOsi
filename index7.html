@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoJuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="Login"> 
+    <div class="ingreso"> 
+<form action="">
+    <input id="username" type="text" placeholder="Username">
+    <br>
+    <input id="password" type="password" placeholder="Password">
+    <br>
+    <button type="button" onclick="login()">Login</button>
+    <br>
+    <p id="message"></p>
+</form>
+    </div>
+    </section>
+
+<main> 
+    <section id="inicio" style="display:none;">
+        <header>
+        <nav class="menu">
+            <a href="#" onclick="mostrarInicio()">Inicio</a>
+            <a href="#" onclick="mostrarResident()">ResidentEvil</a>
+         </nav>
+</header>
+        <div class="headerContenido">
+            <h1 class="tituloInicio">SteamPirata</h1>
+            <img src="img/logoResidentEvil.jpeg" class="logoInicio" >
+            <p class="DescipcionInicio">
+                Aqui se presentaran todos los videojuegos de la saga de Resident Evil. <br>
+                Esta es una pagina donde se van a motrar una pequeña introduccion sobre <br>
+                la Saga de Resident Evil, desde los primeros juegos hasta el juego mas <br>
+                actual que hay y existe. <br>
+            </p>
+            <h3>¿Que es Resident Evil?</h3>
+            <p>Resident Evil es una saga de videojuegos la cual tiene una trama sobre bioterrorismo <br>
+               donde una corporación llamada UMBRELLA desarrolla armas biologicas como lo es el virus T, <br>
+               el virus G, virus uroboros, entre otros mas. El cual estos virus lo que hace es crear zombies <br>
+               o mutantes los cuales tienen conciencia.
+            </p>
+             
+        </div>
+    </section>
+
+<section id="resident" style="display:none;">  
+        <header>
+        <nav class="menu">
+            <a href="#" onclick="mostrarInicio()">Inicio</a>
+            <a href="#" onclick="mostrarResident()">ResidentEvil</a>
+         </nav>
+         </header>
+
+    <div class = "sidebar"> 
+        <h2 class="sidebar">   Videojuegos    <br>
+    Selecciona Un VideoJuego </h2>
+
+    
+
+<div class = "card" onclick = "MostrarvideoJuego(0)"> 
+    <img src="img/ResidentEvil0.jpg" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 0</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(1)"> 
+    <img src="img/ResidentEvilCodeVeronica.jfif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil Code Veronica</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(2)"> 
+    <img src="img/residentEvil.webp"  >
+    <h3>Resident Evil</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(3)"> 
+    <img src="img/ResidentEvil2.png" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 2</h3>
+
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(4)"> 
+    <img src="img/ResidentEvil3.jpg" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 3</h3>
+</div>
+
+
+<div class = "card" onclick = "MostrarvideoJuego(5)"> 
+    <img src="img/ResidentEvil4.jfif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 4</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(6)"> 
+    <img src="img/ResidentEvil5.webp" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 5</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(7)"> 
+    <img src="img/ResidentEvil6.jpg" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 6</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(8)"> 
+    <img src="img/ResidentEvil7.jfif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 7 Biohazard</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(9)"> 
+    <img src="img/ResidentEvil8.jfif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Village Resident Evil </h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(10)"> 
+    <img src="img/ResidentEvil9.jpg" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil Requiem</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(11)"> 
+    <img src="img/ResidentEvil2Remake.avif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 2 Remake</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(12)"> 
+    <img src="img/ResidentEvil3Remake.avif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 3 Remake</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(13)"> 
+    <img src="img/ResidentEvil4Remake.webp" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil 4 Remake</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(14)"> 
+    <img src="img/ResidentEvilRevelations.png" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil Revelations</h3>
+</div>
+
+<div class = "card" onclick = "MostrarvideoJuego(15)"> 
+    <img src="img/ResidentEvilRevelations2.jfif" >  <!--Aqui se colocaran las imagenes de los videojuegos a describir-->
+    <h3>Resident Evil Revelations 2</h3>
+</div>
+  
+</div>
+  
+
+ 
+ </section>
+        
+   </main>
+   </div>
+<div id="modalJuego" class="modal">
+    <div class="modalContenido">
+        <span class="cerrar" onclick="cerrarModal()"> ✖ </span>
+        <h2 id="modalTitulo"></h2>
+
+        <iframe id="modalVideo"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+         
+        <p id="modalDescripcion"></p>
+    </div>
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
